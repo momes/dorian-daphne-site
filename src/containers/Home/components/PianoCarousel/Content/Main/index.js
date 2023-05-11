@@ -35,14 +35,18 @@ const Main = ({isLoading}) => {
        <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none', width: '95vw'}} className='Album' onClick={() =>  window.location.href = "/"
 }>
     <Grid container style={{position: 'relative', top: '15vh', width: '100vw'}}>
-  
-    <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{width:'45vw', zIndex: 100, position: 'absolute', bottom:'-5vw', left:  '1vw'}} className='Logo'/>
-      <Grid item xs={12} style={{zIndex: -1}}>
-       
+    <Grid item xs={1} style={{zIndex: 2}}>
+    <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{width:'25vw', zIndex: 100, position: 'absolute', top: '30vh',bottom:'0', left:  '1vw'}} className='Logo'/>
+
+    </Grid>
+      <Grid item xs={10} style={{zIndex: -1}}>
+
         <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-major-spotify-album.png`} style={{position: 'absolute', left: '5vw', width:'90vw', zIndex: -1}}/>
-      
-        <img src={`${process.env.PUBLIC_URL}/daphne-assets/LISTEN.png`} style={{height:'30vw', zIndex: 5, position: 'absolute', top: '2vh', right: '1vw'}}/>
-      </Grid>
+   </Grid>
+      <Grid item xs={1} style={{zIndex: -1}}>
+      <img src={`${process.env.PUBLIC_URL}/daphne-assets/LISTEN.png`} style={{height:'20vw', zIndex: 5, position: 'absolute', top: '2vh', right: '1vw'}}/>
+
+    </Grid>
   </Grid></button>
   </Fade>
   )

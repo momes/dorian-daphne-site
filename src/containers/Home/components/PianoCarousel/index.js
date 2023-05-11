@@ -72,17 +72,17 @@ function PianoCarousel({isLoading, setIsGame}) {
     <Keys setCurrNote={setCurrNote} currSequence={sequence} currNote={currNote}/>
     {animationDialogue === "main" && <Main fadeIn={!isLoading} />}
     {animationDialogue === "C#" &&  <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/rock-min.png`}/>}
-    {animationDialogue === "D" &&  <Video fadeIn videoUrl={`${process.env.PUBLIC_URL}/daphne-assets/videos/studio1.mp4`}/>}
+    {animationDialogue === "D" &&  <Video fadeIn videoId={'HeTSGNfuG8Q'}/>}
     {animationDialogue === "D#" &&  <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/purplerun-min.png`}/>}
     {animationDialogue === "E" &&  <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/sit-min.png`}/>}
-    {animationDialogue === "F" &&  <Video fadeIn videoUrl={`${process.env.PUBLIC_URL}/daphne-assets/videos/definitively.mp4`}/>}
+    {animationDialogue === "F" &&  <Video fadeIn videoId={'X-HVSFVB2xw'}/>}
     {animationDialogue === "F#" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/jump-min.png`}/>}
     {animationDialogue === "G" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/lean-min.png`} />}
     {animationDialogue === "G#" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/erik-nate.jpg`} />}
     {animationDialogue === "A" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/face-min.png`} />}
     {animationDialogue === "A#" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/band.jpg`} />}
     {animationDialogue === "B" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/punch-min.png`} />}
-    {animationDialogue === "C2" &&  <Video fadeIn videoUrl={`${process.env.PUBLIC_URL}/daphne-assets/videos/ryan.mp4`}/>}
+    {animationDialogue === "C2" &&  <Video fadeIn videoId={'9g23Ao7joJw'}/>}
     {animationDialogue === "C#2" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/purple-min.png`} />}
     {(animationDialogue === "D2") && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/bow-min.png`} />}
     {animationDialogue === "D#2" && <Photo fadeIn imageUrl={`${process.env.PUBLIC_URL}/daphne-assets/photos/distort-min.png`} />}
