@@ -1,7 +1,12 @@
 import React, { useLayoutEffect, useState } from 'react';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 function Randomizer(props) {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   const [assets, setAssets] = useState({});
   const [addAsset, setAddAsset] = useState(false);
   const [currTimeOut, setCurrTimeOut] = useState(null);
@@ -53,7 +58,7 @@ function Randomizer(props) {
     }}, [addAsset, assets, currTimeOut])
 
   return (
-    <div >
+    <div style={{width: '100vw', overflow: 'hidden' }}>
       {Object.keys(assets).map((asset) => (
         <img 
               src={process.env.PUBLIC_URL + `/daphne-assets/random-assets/${asset}.png`}
@@ -61,8 +66,8 @@ function Randomizer(props) {
               style={{position: "fixed",
                   left: `${assets[asset][0]}%`,
                   top: `${assets[asset][1]}%`,
-                  maxWidth: "250px",
-                  maxHeight: "250px",
+                  maxWidth: isMobile ? "100px" : "250px",
+                  maxHeight: isMobile ? "100px" : "250px",
                   position: 'absolute',
                   opacity: 0.5,
                   zIndex: -1

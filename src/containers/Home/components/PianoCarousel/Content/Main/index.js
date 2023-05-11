@@ -32,7 +32,7 @@ const Main = ({isLoading}) => {
   ): 
   (
     <Fade in={!isLoading} timeout={1000}>
-       <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none'}} className='Album' onClick={() =>  window.location.href = "/"
+       <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none', width: '95vw'}} className='Album' onClick={() =>  window.location.href = "/"
 }>
     <Grid container style={{position: 'relative', top: '15vh', width: '100vw'}}>
   
