@@ -1,0 +1,240 @@
+
+    .keyContainer {
+        width: 50vw;
+        height:15vw;
+        left:25vw;
+        top:3vh;
+        margin: 0 0;
+        overflow: visible;
+        position:absolute;
+        z-index: 500
+    }
+    .keyflex{
+        display:flex;
+        min-height: 5vw;
+        position: absolute;
+    }
+    .key {
+        width:100%;
+    }
+    
+    .blacks {
+        z-index: 5;
+        position:absolute;
+        top: -1vw;
+        width:90%;
+        margin: 0% 5%;
+    }
+    .blacks div {
+        animation: keys-up-down 3s infinite;
+        animation-fill-mode: both;
+      }
+
+    .blacks div :nth-child(1) 
+        { animation-delay: .3s }
+    .blacks div :nth-child(2) 
+        { animation-delay: .6s }
+    .blacks div :nth-child(3) 
+        { animation-delay: .9s }
+    .blacks div :nth-child(4) 
+        { animation-delay: 1.2s }
+    .blacks div :nth-child(5) 
+        { animation-delay: 1.5s }
+    .blacks div :nth-child(6) 
+        { animation-delay: 1.8s }
+    .blacks div :nth-child(7) 
+        { animation-delay: 2.1s }
+    .blacks div :nth-child(8) 
+        { animation-delay: 2.3s }
+    
+    .still { 
+        animation-play-state: paused !important;
+    }
+    
+    
+    @keyframes keys-up-down { 
+        0%, 100% {
+          transform: translateY(5px);
+        }
+      
+        50% {
+            transform: translateY(-5px);
+        }
+      }
+    
+    .whites {
+        z-index: 2;
+        position:absolute;
+        top: 3vw;
+    }
+    .whites div {
+        animation: keys-up-down 3s infinite;
+        animation-fill-mode: both;
+      }
+
+    .whites div:nth-child(1) 
+        { animation-delay: .3s }
+    .whites div:nth-child(2) 
+        { animation-delay: .6s }
+    .whites div:nth-child(3) 
+        { animation-delay: .9s }
+    .whites div:nth-child(4) 
+        { animation-delay: 1.2s }
+    .whites div:nth-child(5) 
+        { animation-delay: 1.5s }
+    .whites div:nth-child(6) 
+        { animation-delay: 1.8s }
+    .whites div:nth-child(7) 
+        { animation-delay: 2.1s }
+    .whites div:nth-child(8) 
+        { animation-delay: 2.3s }
+    
+    
+    .black {
+        align-self: flex-start;
+    }
+    
+    .color {
+        align-self: flex-end;
+    }
+    
+    .colflex {
+        display:flex;
+        flex-direction: column;
+        cursor:pointer;
+        width: 18%;
+    }
+    .pressed {
+        -webkit-filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+        box-shadow: 0 0 0 none;
+        animation: none;
+    }
+    
+    @media (orientation: portrait) {
+        .keyContainer {
+            width: 85vw;
+            left: 7vw
+        }
+        .whites {
+            top:4vh;
+        }}
+/* 
+@media (orientation: portrait) {
+    .keyContainer {
+        width: 90vw;
+        height:20vw;
+        margin: 0 auto;
+        overflow: visible;
+        position:relative;
+    }
+    .keyflex{
+        display:flex;
+        min-height: 12vw;
+        position: absolute;
+    }
+    .key {
+        width:100%;
+    }
+    
+    .blacks {
+        z-index: 5;
+        top: -5vw;
+        width:90%;
+        margin: 0% 5%;
+    }
+
+    .blacks div {
+        float: left;
+        margin: 20px;
+        animation: FadeIn 1s linear;
+        animation-fill-mode: both;
+      }
+
+    .blacks div:nth-child(1) 
+        { animation-delay: .5s }
+    
+    
+    @keyframes FadeIn { 
+        0% {
+          opacity: 0;
+          transform: scale(.1);
+        }
+      
+        85% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+    .whites {
+        z-index: 2;
+    }
+    
+    .black {
+        align-self: flex-start;
+    }
+    
+    .color {
+        align-self: flex-end;
+    }
+    
+    .colflex {
+        display:flex;
+        flex-direction: column;
+        cursor:pointer;
+        width: 18%;
+    }
+    
+    
+    .pressed {
+        -webkit-filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+        box-shadow: 0 0 0 none;
+        animation: none;
+    }
+    
+} */
+
+
+.pressed {
+    -webkit-filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 0 none;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: top(0);
+		-ms-transform:     top(0);
+		transform:         top(0)
+	}
+	40% {
+		-webkit-transform: top(-30px);
+		-ms-transform:     top(-30px);
+		transform:         top(-30px)
+	}
+	60% {
+		-webkit-transform: top(-15px);
+		-ms-transform:     top(-15px);
+		transform:         top(-15px)
+	}
+}
+.hover {  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.hover:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}

@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.Nav:hover {
+  border-bottom: 2px solid #1567d6;
+}
+
+.ActiveTab {
+  filter: invert(26%) sepia(53%) saturate(3253%) hue-rotate(205deg) brightness(99%) contrast(87%);
+}

@@ -1,0 +1,282 @@
+
+.cutout {
+    -webkit-filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
+  box-shadow: 0 0 0 none;
+  
+}
+
+.Album:focus:hover{
+    color: inherit;
+    border: none;
+}
+
+#slide {
+    position: absolute;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+
+.window {
+    display:flex;
+    position: absolute;
+}
+.drawings {
+    position: absolute;
+
+}
+
+.Leaf {
+    z-index: 100;
+    left: -5%;
+    bottom:-5%;
+    width: 35%;
+    animation: in-out 4s infinite
+}
+
+.Shell {
+    z-index: 90;
+    position: absolute;
+    left: 10%;
+    top: 57%;
+    width:20%;
+    animation: seesaw 5s infinite;
+}
+
+
+.Cards {
+    z-index: 100;
+    position: absolute;
+    left: 70%;
+    top: 35%;
+    width:30%;
+    animation: left-right 8s infinite
+}
+
+.BlueGuy {
+    z-index: 100;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width:42%;
+    animation: in-out 5s infinite
+}
+
+.Cactus {
+    z-index: 99;
+    position: absolute;
+    left: -5%;
+    bottom: 25%;
+    width:30%;
+    animation: left-right 6s infinite
+
+}
+
+
+.Clown {
+    z-index: 100;
+    position: absolute;
+    left: 65%;
+    bottom: 0%;
+    width:35%;
+    animation: in-out 2s infinite
+}
+
+.CryingBust {
+    z-index: 60;
+    position: absolute;
+    left: -3%;
+    top: 15%;
+    width: 18%;
+    animation: big-small 8s infinite
+}
+
+.Dynamite {
+    z-index: 100;
+    position: absolute;
+    left: 75%;
+    bottom: 50%;
+    width:25%;
+    animation: seesaw 2s infinite
+}
+
+.HandMind {
+    z-index: 100;
+    position: absolute;
+    left: 65%;
+    bottom: 0%;
+    width:35%;
+    animation: in-out 2s infinite
+}
+
+.Mantis {
+    z-index: 100;
+    position: absolute;
+    left: 65%;
+    bottom: 0%;
+    width:35%;
+    animation: in-out 2s infinite
+}
+
+.Mushroom {
+    z-index: 90;
+    position: absolute;
+    right: 25%;
+    bottom: 0%;
+    width:17%;
+    animation: big-small 7s infinite
+}
+
+.OrchidWhite {
+    z-index: 50;
+    position: absolute;
+    left: 75%;
+    bottom: 30%;
+    width:15%;
+    animation: seesaw 5s infinite
+}
+
+.Phone {
+    z-index: 100;
+    position: absolute;
+    left: 65%;
+    bottom: 0%;
+    width:35%;
+    animation: in-out 2s infinite
+}
+
+.PianoPrism {
+    z-index: 100;
+    position: absolute;
+    left: 65%;
+    bottom: 0%;
+    width:35%;
+    animation: in-out 2s infinite
+}
+
+.PianoPunch {
+    z-index: 100;
+    position: absolute;
+    left: 75%;
+    bottom: 25%;
+    width:25%;
+    animation: left-right 2s infinite
+}
+
+.RedLizard {
+    z-index: 40;
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    width:20%;
+    animation: in-out 6s infinite
+}
+
+.SpikyPlant {
+    z-index: 30;
+    position: absolute;
+    right: -5%;
+    bottom: -5%;
+    width:40%;
+    animation: in-out 2s infinite
+}
+
+
+.Photos {
+    z-index: 10;
+    position:absolute;
+    width: 42vw;
+    left: 30vw;
+    top:20vh;
+}
+
+.Logo {
+    animation: rotate 8s infinite;
+    animation-timing-function: linear;
+    -webkit-filter: drop-shadow(5px 5px 0 #1a1a1a82);
+    filter: drop-shadow(5px 5px 0 #1a1a1a82);
+}
+
+
+.Game {
+    animation: brightness 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes brightness {
+    0% { -webkit-filter: brightness(10%); }
+    100%  { -webkit-filter: brightness(0%); }
+  }
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+		-ms-transform:     rotate(0deg);
+		transform:         rotate(0deg)
+    }
+    100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform:     rotate(360deg);
+		transform:         rotate(360deg)
+	}
+}
+
+@keyframes seesaw {
+	0%, 100% {
+		-webkit-transform: rotate(10deg);
+		-ms-transform:     rotate(10deg);
+		transform:         rotate(10deg)
+	}
+	50% {
+		-webkit-transform: rotate(-10deg);
+		-ms-transform:     rotate(-10deg);
+		transform:         rotate(-10deg)
+	}
+}
+
+@keyframes in-out {
+	0%, 100% {
+		-webkit-transform: translateY(5px);
+		-ms-transform:     translateY(5px);
+		transform:         translateY(5px)
+	}
+	50% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+}
+@keyframes left-right {
+    0%, 100% {
+        -webkit-transform: translateX(5px);
+        -ms-transform:     translateX(5px);
+        transform:         translateX(5px)
+    }
+    50% {
+        -webkit-transform: translateX(-5px);
+        -ms-transform:     translateX(-5px);
+        transform:         translateX(-5px)
+    }
+}
+
+@keyframes big-small {
+    0%, 100% {
+        -webkit-transform: scale(100%);
+        -ms-transform:     scale(100%);
+        transform:         scale(100%)
+    }
+    50% {
+        -webkit-transform: scale(120%);
+        -ms-transform:     scale(120%);
+        transform:         scale(120%)
+    }
+}
+
+a:hover {
+    
+filter: invert(15%) sepia(99%) saturate(3512%) hue-rotate(352deg) brightness(83%) contrast(103%);
+}
+

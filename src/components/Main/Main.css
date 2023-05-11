@@ -1,0 +1,20 @@
+.Main {
+    position: absolute;
+    width:30vw;
+    left:35vw;
+    top: 20vh;
+    height: 60vh;
+
+}
+
+.title {
+    display: block;
+    width: 100%;
+    margin: 10% auto;
+}
+
+.title-card {
+    height:40vh;
+    width:30vw;
+    margin: 0px auto;
+}
