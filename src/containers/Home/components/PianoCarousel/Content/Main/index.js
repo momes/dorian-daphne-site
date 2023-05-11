@@ -36,12 +36,12 @@ const Main = ({isLoading}) => {
 }>
     <Grid container style={{position: 'relative', top: '15vh', width: '100vw'}}>
   
-    <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{width:'45vw', zIndex: 100, position: 'absolute', bottom:'-5vw', left:  '2vw'}} className='Logo'/>
+    <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{width:'45vw', zIndex: 100, position: 'absolute', bottom:'-5vw', left:  '1vw'}} className='Logo'/>
       <Grid item xs={12} style={{zIndex: -1}}>
        
-        <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-major-spotify-album.png`} style={{width:'90vw', zIndex: -1}}/>
+        <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-major-spotify-album.png`} style={{position: 'absolute', left: '5vw', width:'90vw', zIndex: -1}}/>
       
-        <img src={`${process.env.PUBLIC_URL}/daphne-assets/LISTEN.png`} style={{height:'30%', zIndex: 5, position: 'absolute', top: '2vh', right: '2vw'}}/>
+        <img src={`${process.env.PUBLIC_URL}/daphne-assets/LISTEN.png`} style={{height:'30vw', zIndex: 5, position: 'absolute', top: '2vh', right: '1vw'}}/>
       </Grid>
   </Grid></button>
   </Fade>
