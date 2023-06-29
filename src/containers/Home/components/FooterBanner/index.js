@@ -1,11 +1,14 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import styled from '@mui/material/styles/styled';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 const ScrollingText = styled(Typography)`
   position: fixed;
   bottom: 0;
-  height: 10vh;
+  height:  10vh;
   width: 500vw;
   background-color: transparent;
   color: ${(props) => props.theme.palette.primary.contrastText};
@@ -13,7 +16,7 @@ const ScrollingText = styled(Typography)`
   display: flex;
   align-items: center;
   overflow-x: auto;
-  animation: scrollText 200s linear infinite;
+  animation: scrollText ${(props) => props.isMobile ? '100s' :'200s'} linear infinite;
   white-space: nowrap;
   margin-right: ${(props) => props.theme.spacing(4)};
   &:hover {
@@ -31,9 +34,12 @@ cursor: -webkit-grab;};
 `;
 
 const FooterBanner = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   return (
     <div>
-      <ScrollingText onClick={() => {
+      <ScrollingText isMobile={isMobile} onClick={() => {
     window.open('https://www.momes.work/dorian-store/p/daphne-major-vinyl-pre-order', '_blank');
   }}>
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
