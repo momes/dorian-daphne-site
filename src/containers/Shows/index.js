@@ -21,7 +21,7 @@ function Shows() {
          NO UPCOMING SHOWS.
       </Typography>)}
       <>
-      {SHOWS.filter((s)=> s.metaDate > new Date().getDate()).map((show, i) => 
+      {SHOWS.filter((s)=> s.metaDate > new Date()).map((show, i) => 
         (<Box style={{width:isMobile ? "90vw" : "50vw", margin: '5vh auto'}}>
           <Typography style={{color: 'blue', fontWeight: 'bold', textAlign: 'center'}}>
         {show.date}            
