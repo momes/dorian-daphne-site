@@ -9,14 +9,13 @@ const ScrollingText = styled(Typography)`
   position: fixed;
   bottom: 0;
   height:  10vh;
-  width: 500vw;
   background-color: transparent;
   color: ${(props) => props.theme.palette.primary.contrastText};
   padding: ${(props) => props.theme.spacing(2)};
   display: flex;
   align-items: center;
   overflow-x: auto;
-  animation: scrollText ${(props) => props.isMobile ? '100s' :'200s'} linear infinite;
+  animation: scrollText ${(props) => props.isMobile ? '200s' :'300s'} linear infinite;
   white-space: nowrap;
   margin-right: ${(props) => props.theme.spacing(4)};
   &:hover {
