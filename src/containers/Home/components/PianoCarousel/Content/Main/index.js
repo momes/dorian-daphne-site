@@ -11,11 +11,14 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 const Main = ({isLoading}) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+  const handleClick = () => {
+    window.open('https://open.spotify.com/album/6h1jLoHIlZ7pJPG8zgbzIl?si=4kZFJfeYTyiRDnkHZpt2-A', '_blank')
+  }
   
   return !isMobile ? (
     <Fade in={!isLoading} timeout={1000}>
-       <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none'}} className='Album' onClick={() =>  window.location.href = "/"
-}>
+       <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none'}} className='Album' onClick={handleClick}>
     <Grid container style={{position: 'relative', top: '25vh'}}>
       <Grid item xs={4} style={{position: 'relative', zIndex: 100}}>
         <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{height:'30vw', zIndex: 100, position: 'relative', top:'2vw', left:  '2vw'}} className='Logo'/>
@@ -32,8 +35,7 @@ const Main = ({isLoading}) => {
   ): 
   (
     <Fade in={!isLoading} timeout={1000}>
-       <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none', width: '95vw'}} className='Album' onClick={() =>  window.location.href = "/"
-}>
+       <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none', width: '95vw'}} className='Album' onClick={handleClick}>
     <Grid container style={{position: 'relative', top: '15vh', width: '100vw'}}>
     <Grid item xs={1} style={{zIndex: 2}}>
     <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{width:'25vw', zIndex: 100, position: 'absolute', top: '30vh',bottom:'0', left:  '1vw'}} className='Logo'/>

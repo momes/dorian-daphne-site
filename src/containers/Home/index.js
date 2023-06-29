@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import MainLayout from "../../components/MainLayout";
 import PianoCarousel from "./components/PianoCarousel";
+import  FooterBanner from './components/FooterBanner'
 import './Home.css';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -28,6 +29,7 @@ function Home() {
           </> ) : 
           (<MainLayout className={'Game'}>
             <PianoCarousel isLoading={isLoading} setIsGame={setIsGame}/>
+            <FooterBanner />
           </MainLayout>)}
     </>
   );
