@@ -15,7 +15,7 @@ const ScrollingText = styled(Typography)`
   display: flex;
   align-items: center;
   overflow-x: auto;
-  animation: scrollText ${(props) => props.isMobile ? '200s' :'300s'} linear infinite;
+  animation: scrollText ${(props) => props.isMobile ? '100s' :'300s'} linear infinite;
   white-space: nowrap;
   margin-right: ${(props) => props.theme.spacing(4)};
   &:hover {
