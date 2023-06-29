@@ -15,7 +15,7 @@ const ScrollingText = styled(Typography)`
   display: flex;
   align-items: center;
   overflow-x: auto;
-  animation: scrollText ${(props) => props.isMobile ? '100s' :'300s'} linear infinite;
+  animation: scrollText ${(props) => props.isMobile ? '60s' :'120s'} linear infinite;
   white-space: nowrap;
   margin-right: ${(props) => props.theme.spacing(4)};
   &:hover {
@@ -27,7 +27,7 @@ cursor: -webkit-grab;};
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-70%);
     }
   }
 `;
@@ -44,16 +44,14 @@ const FooterBanner = () => {
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
+
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
+
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
+
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
-      <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
-      <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
-      <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
-      <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
-      <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
-      <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
-      </ScrollingText>
+
+     </ScrollingText>
     </div>
   );
 };
