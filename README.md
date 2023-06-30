@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# Nick Dorian's Daphne Major Site
 
+This is a website for Nick Dorian's Daphne Major.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

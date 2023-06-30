@@ -38,15 +38,15 @@ const Main = ({isLoading}) => {
        <button style= {{backgroundColor: 'transparent', border: 'none', outline:'none', width: '95vw'}} className='Album' onClick={handleClick}>
     <Grid container style={{position: 'relative', top: '15vh', width: '100vw'}}>
     <Grid item xs={1} style={{zIndex: 2}}>
-    <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{width:'25vw', zIndex: 100, position: 'absolute', top: '30vh',bottom:'0', left:  '1vw'}} className='Logo'/>
+    <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-logo.png`} style={{width:'35vw', zIndex: 100, position: 'absolute', top: '30vh',bottom:'0', left:  '1vw'}} className='Logo'/>
 
     </Grid>
       <Grid item xs={10} style={{zIndex: -1}}>
 
-        <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-major-spotify-album.png`} style={{position: 'absolute', left: '5vw', width:'90vw', zIndex: -1}}/>
+        <img src={`${process.env.PUBLIC_URL}/daphne-assets/daphne-major-spotify-album.png`} style={{position: 'absolute', right: '6vw', width:'90vw', zIndex: -1}}/>
    </Grid>
       <Grid item xs={1} style={{zIndex: -1}}>
-      <img src={`${process.env.PUBLIC_URL}/daphne-assets/LISTEN.png`} style={{height:'20vw', zIndex: 5, position: 'absolute', top: '2vh', right: '1vw'}}/>
+      <img src={`${process.env.PUBLIC_URL}/daphne-assets/LISTEN.png`} style={{height:'20vw', zIndex: 5, position: 'absolute', top: '2vh', right: '5vw'}}/>
 
     </Grid>
   </Grid></button>
