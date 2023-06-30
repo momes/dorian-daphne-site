@@ -44,10 +44,6 @@ align-items: center;
 overflow-x: auto;
 white-space: nowrap;
 margin-right: ${(props) => props.theme.spacing(4)};
-&:hover {
-  filter: invert(60%) sepia(68%) saturate(2451%) hue-rotate(295deg) brightness(94%) contrast(89%);
-cursor:pointer;
-cursor: -webkit-grab;};
 `;
 
 const FooterBanner = () => {
