@@ -10,7 +10,7 @@ import Projects from './containers/Projects';
 
 import HomeMain from './containers/Home/index.js';
 import Shows from './containers/Shows/index.js'
-
+import EPKPage from './containers/EPK';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         {/* <Route path="/projects" element={<Projects />} /> */}
         <Route path="/shows" element={<Shows />} />
          {/* <Route path="/store" element={<Store />} /> */}
-       
+         <Route path="/one-sheet" element={<EPKPage />} /> 
       </Routes>
     </BrowserRouter>
   );
