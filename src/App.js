@@ -21,7 +21,7 @@ function App() {
         {/* <Route path="/projects" element={<Projects />} /> */}
         <Route path="/shows" element={<Shows />} />
          {/* <Route path="/store" element={<Store />} /> */}
-         <Route path="/one-sheet" element={<EPKPage />} /> 
+         <Route path="/onesheet" element={<EPKPage />} /> 
       </Routes>
     </BrowserRouter>
   );
