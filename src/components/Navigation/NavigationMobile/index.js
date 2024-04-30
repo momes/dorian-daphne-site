@@ -48,7 +48,7 @@ return (
         </Link>
       </ListItem>
       <ListItem key={'f'}>
-        <a href={'https://www.momes.work/dorian-store'}  target="_blank" rel="noopener noreferrer" >
+        <a href={'https://16b780-2.myshopify.com/'}  target="_blank" rel="noopener noreferrer" >
           <img id={'MERCH'} alt={'MERCH'} src={`${process.env.PUBLIC_URL}/Navigation/${'MERCH'}.png`} style={{width: '100%'}} className={`Nav ${active === 'MERCH' ? 'ActiveTab' : '' }`}/>
         </a>
       </ListItem>
