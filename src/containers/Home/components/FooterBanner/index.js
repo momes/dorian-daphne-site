@@ -55,7 +55,7 @@ const FooterBanner = () => {
     {!isMobile ? (
     <div>
       <ScrollingText onClick={() => {
-    window.open('https://www.momes.work/dorian-store/p/daphne-major-vinyl-pre-order', '_blank');
+    window.open('https://16b780-2.myshopify.com/', '_blank');
   }}>
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder.png`} style={{height:'100%',backgroundRepeat: 'repeat-x', margin: '0px 50px'}}/>
@@ -71,7 +71,7 @@ const FooterBanner = () => {
     </div>) : 
     (<div>
        <NoScrollTextMobile onClick={() => {
-    window.open('https://www.momes.work/dorian-store/p/daphne-major-vinyl-pre-order', '_blank');
+    window.open('https://16b780-2.myshopify.com/', '_blank');
   }}>
       <img src={`${process.env.PUBLIC_URL}/daphne-assets/preorder-mobile.png`} style={{width:'100%'}}/>
   
